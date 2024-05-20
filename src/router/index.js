@@ -5,6 +5,7 @@ import EmpleadoCreate from '../components/empleados/EmpleadoCreate.vue';
 import EmpleadoEdit from '../components/empleados/EmpleadoEdit.vue';
 import DepartamentoIndex from '../components/departamentos/DepartamentoIndex.vue';
 import DepartamentoCreate from '../components/departamentos/DepartamentoCreate.vue';
+import DepartamentoEdit from '../components/departamentos/DepartamentoEdit.vue';
 
 
 const routes = [
@@ -48,6 +49,12 @@ const routes = [
     path: '/departamentos/Create',
     name: 'departamentos.Create',
     component: DepartamentoCreate
+  },
+
+  {
+    path: '/departamentos/Edit',
+    name: 'departamentos.Edit',
+    component: DepartamentoEdit
   }
 ]
 

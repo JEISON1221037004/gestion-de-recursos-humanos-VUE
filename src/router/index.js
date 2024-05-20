@@ -8,6 +8,7 @@ import DepartamentoCreate from '../components/departamentos/DepartamentoCreate.v
 import DepartamentoEdit from '../components/departamentos/DepartamentoEdit.vue';
 import PosicionIndex from '../components/posiciones/PosicionIndex.vue';
 import posicionesCreate from '../components/posiciones/PosicionCreate.vue';
+import PosicionEdit from '../components/posiciones/PosicionEdit.vue';
 
 
 const routes = [
@@ -69,6 +70,12 @@ const routes = [
     path: '/posiciones/create',
     name: 'posiciones.create',
     component: PosicionCreate
+  },
+
+  {
+    path: '/posiciones/edit/:id',
+    name: 'posiciones.edit',
+    component: PosicionEdit
   }
 ]
 

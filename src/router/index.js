@@ -14,6 +14,8 @@ import HistorialSalarioCreate from '../components/historial_salarios/HistorialSa
 import HistorialSalarioEdit from '../components/historial_salarios/HistorialSalarioEdit.vue';
 import EvaluacionIndex from '../components/evaluaciones/EvaluacionIndex.vue';
 import EvaluacionCreate from '../components/evaluaciones/EvaluacionCreate.vue';
+import EvaluacionEdit from '../components/evaluaciones/EvaluacionEdit.vue';
+
 
 
 
@@ -115,6 +117,12 @@ const routes = [
     path: '/evaluaciones/create',
     name: 'evaluaciones.create',
     component: EvaluacionCreate
+  },
+
+  {
+    path: '/evaluaciones/edit/:id',
+    name: 'evaluaciones.edit',
+    component: EvaluacionEdit
   }
 ]
 

@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import EmpleadoIndex from '../components/empleados/EmpleadoIndex.vue';
 import EmpleadoCreate from '../components/empleados/EmpleadoCreate.vue';
 import EmpleadoEdit from '../components/empleados/EmpleadoEdit.vue';
+import DepartamentoIndex from '../components/departamentos/DepartamentoIndex.vue';
 
 const routes = [
   {
@@ -33,6 +34,12 @@ const routes = [
     path: '/empleados/edit/:id',
     name: 'empleados.edit',
     component: EmpleadoEdit
+  },
+
+  {
+    path: '/departamentos',
+    name: 'departamentos.index',
+    component: DepartamentoIndex
   }
 ]
 

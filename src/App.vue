@@ -26,6 +26,9 @@
             <li class="nav-item">
               <router-link to="/historial_salarios" class="nav-link">Historial de Salarios</router-link>
             </li>
+            <li class="nav-item">
+              <router-link to="/evaluaciones" class="nav-link">Evaluaciones</router-link>
+            </li>
           </ul>
         </div>
       </div>

@@ -7,8 +7,9 @@ import DepartamentoIndex from '../components/departamentos/DepartamentoIndex.vue
 import DepartamentoCreate from '../components/departamentos/DepartamentoCreate.vue';
 import DepartamentoEdit from '../components/departamentos/DepartamentoEdit.vue';
 import PosicionIndex from '../components/posiciones/PosicionIndex.vue';
-import posicionesCreate from '../components/posiciones/PosicionCreate.vue';
+import PosicionCreate from '../components/posiciones/PosicionCreate.vue';
 import PosicionEdit from '../components/posiciones/PosicionEdit.vue';
+import HistorialSalarioIndex from '../components/historial_salarios/HistorialSalarioIndex.vue';
 
 
 const routes = [
@@ -76,6 +77,12 @@ const routes = [
     path: '/posiciones/edit/:id',
     name: 'posiciones.edit',
     component: PosicionEdit
+  },
+
+  {
+    path: '/historial_salarios',
+    name: 'historial_salarios.index',
+    component: HistorialSalarioIndex
   }
 ]
 

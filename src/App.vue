@@ -23,6 +23,9 @@
             <li class="nav-item">
               <router-link to="/posiciones" class="nav-link">Posiciones</router-link>
             </li>
+            <li class="nav-item">
+              <router-link to="/historial_salarios" class="nav-link">Historial de Salarios</router-link>
+            </li>
           </ul>
         </div>
       </div>

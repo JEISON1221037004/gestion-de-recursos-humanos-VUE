@@ -11,6 +11,7 @@ import PosicionCreate from '../components/posiciones/PosicionCreate.vue';
 import PosicionEdit from '../components/posiciones/PosicionEdit.vue';
 import HistorialSalarioIndex from '../components/historial_salarios/HistorialSalarioIndex.vue';
 import HistorialSalarioCreate from '../components/historial_salarios/HistorialSalarioCreate.vue';
+import HistorialSalarioEdit from '../components/historial_salarios/HistorialSalarioEdit.vue';
 
 
 
@@ -95,6 +96,12 @@ const routes = [
     path: '/historial_salarios/create',
     name: 'historial_salarios.create',
     component: HistorialSalarioCreate
+  },
+
+  {
+    path: '/historial_salarios/edit/:id',
+    name: 'historial_salarios.edit',
+    component: HistorialSalarioEdit
   }
 ]
 

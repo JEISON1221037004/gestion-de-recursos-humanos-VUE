@@ -1,12 +1,41 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-    <router-link to="/empleados">Empleados</router-link>
-    <router-link to="/departamentos">Departamentos</router-link>
-  </nav>
-  <router-view/>
+  <div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Gestión de Recursos Humanos</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <router-link to="/" class="nav-link">Home</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link to="/about" class="nav-link">About</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link to="/empleados" class="nav-link">Empleados</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link to="/departamentos" class="nav-link">Departamentos</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link to="/posiciones" class="nav-link">Posiciones</router-link>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <router-view/>
+  </div>
 </template>
+
+<script>
+export default {
+  name: 'App'
+}
+</script>
 
 <style>
 #app {

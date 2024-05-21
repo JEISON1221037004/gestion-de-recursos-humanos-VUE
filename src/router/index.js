@@ -1,25 +1,71 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import { createRouter, createWebHistory } from 'vue-router';
+import EmployeeList from '../components/EmployeeList.vue';
+import EmployeeForm from '../components/EmployeeForm.vue';
+import DepartmentList from '../components/DepartmentList.vue';
+import DepartmentForm from '../components/DepartmentForm.vue';
+import PositionList from '../components/PositionList.vue';
+import PositionForm from '../components/PositionForm.vue';
+import SalaryList from '../components/SalaryList.vue';
+import SalaryForm from '../components/SalaryForm.vue';
+import PerformanceReviewList from '../components/PerformanceReviewList.vue';
+import PerformanceReviewForm from '../components/PerformanceReviewForm.vue';
 
 const routes = [
   {
-    path: '/',
-    name: 'home',
-    component: HomeView
+    path: '/employees',
+    name: 'EmployeeList',
+    component: EmployeeList
   },
   {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
-  }
-]
+    path: '/employees/add',
+    name: 'AddEmployee',
+    component: EmployeeForm
+  },
+  {
+    path: '/departments',
+    name: 'DepartmentList',
+    component: DepartmentList
+  },
+  {
+    path: '/departments/add',
+    name: 'AddDepartment',
+    component: DepartmentForm
+  },
+  {
+    path: '/positions',
+    name: 'PositionList',
+    component: PositionList
+  },
+  {
+    path: '/positions/add',
+    name: 'AddPosition',
+    component: PositionForm
+  },
+  {
+    path: '/salaries',
+    name: 'SalaryList',
+    component: SalaryList
+  },
+  {
+    path: '/salaries/add',
+    name: 'AddSalary',
+    component: SalaryForm
+  },
+  {
+    path: '/performance-reviews',
+    name: 'PerformanceReviewList',
+    component: PerformanceReviewList
+  },
+  {
+    path: '/performance-reviews/add',
+    name: 'AddPerformanceReview',
+    component: PerformanceReviewForm
+  },
+];
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory(),
   routes
-})
+});
 
-export default router
+export default router;
